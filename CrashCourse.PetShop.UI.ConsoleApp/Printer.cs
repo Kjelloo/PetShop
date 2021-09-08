@@ -67,6 +67,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
                 Println("Type 1 to see all pets");
                 Println("Type 2 to sort the list by ascending price");
                 Println("Type 3 to see the five cheapest pets");
+                Println("Type 4 to search pets by pet type");
                 Println("Type 0 to go back");
                 string selection = AskQuestion("Select: ");
 
@@ -80,6 +81,9 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
                         break;
                     case "3":
                         PrintFiveCheapestPetsSelection();
+                        break;
+                    case "4":
+                        PrintGetPetsByPetType();
                         break;
                     case "0":
                         Clear();
@@ -205,6 +209,38 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
 
             PrintInvalidInput();
             return false;
+        }
+
+        private void PrintGetPetsByPetType()
+        {
+            Clear();
+
+            var selection = AskQuestion("Pet type: ");
+
+            var petType = _petTypeService.GetPetTypeByName(selection);
+
+            if (petType == null)
+            {
+                Clear();
+                Println("Could not find any pets by that name");
+                Thread.Sleep(_sleepTime);
+                return;
+            }
+
+            Clear();
+            
+            foreach (var pet in _petService.GetPetsByType(petType))
+            {
+                Println(pet.ToString());
+            }
+
+            while (int.TryParse(AskQuestion("Type 0 to go back: "), out int selectionInt))
+            {
+                if (selectionInt == 0)
+                    return;
+                
+                PrintInvalidInput();
+            }
         }
         
         /*

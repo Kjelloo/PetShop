@@ -56,11 +56,13 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         {
             if (id != pet.Id)
                 return BadRequest("Id to change does not match pet id");
-            
-            _petService.UpdatePet(pet);
-            _petTypeService.SavePetType(_petTypeService.NewPetType(pet.Type.Name));
-            
-            return Ok();
+
+            var petUpdate = _petService.UpdatePet(pet);
+
+            if (petUpdate != null)
+                return Ok(pet);
+
+            return BadRequest("Cannot update pet");
         }
         
         // DELETE

@@ -34,7 +34,8 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public Pet UpdatePet(Pet petUpdate)
         {
-            return _petRepo.Update(petUpdate);
+            petUpdate = _petRepo.Update(petUpdate);
+            return petUpdate;
         }
 
         public List<Pet> GetPetsByColor(string color)
@@ -95,6 +96,11 @@ namespace CrashCourse.PetShop.Domain.Services
                 throw new Exception("Pet is already saved to the database");
             
             return SavePet(pet);
+        }
+
+        public List<Pet> GetPetsByType(PetType petType)
+        {
+            return GetAllPets().FindAll(pet => Equals(pet.Type, petType));
         }
     }
 }

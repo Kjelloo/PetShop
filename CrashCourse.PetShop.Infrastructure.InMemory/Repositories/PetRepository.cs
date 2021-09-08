@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CrashCourse.PetShop.Core.IRepositories;
 using CrashCourse.PetShop.Core.Models;
@@ -26,15 +27,27 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
         public Pet Update(Pet petUpdate)
         {
             var petDb = GetPetById(petUpdate.Id);
+            
             if (petDb == null) return null;
+
+            if (petUpdate.Name != null)
+                petDb.Name = petUpdate.Name;
             
-            petDb.Name = petUpdate.Name;
-            petDb.Color = petUpdate.Color;
-            petDb.Price = petUpdate.Price;
-            petDb.Type = petUpdate.Type;
-            petDb.BirthDate = petUpdate.BirthDate;
-            petDb.SoldDate = petUpdate.SoldDate;
+            if (petUpdate.Color != null)
+                petDb.Color = petUpdate.Color;
             
+            if (petUpdate.Price != null)
+                petDb.Price = petUpdate.Price;
+            
+            if (petUpdate.Type != null)
+                petDb.Type = petUpdate.Type;
+            
+            if (petUpdate.BirthDate != DateTime.MinValue)
+                petDb.BirthDate = petUpdate.BirthDate;
+            
+            if (petUpdate.SoldDate != DateTime.MinValue) 
+                petDb.SoldDate = petUpdate.SoldDate;
+
             return petDb;
         }
 
@@ -45,7 +58,7 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
 
         public Pet GetPetById(int id)
         {
-            return _pets
+            /*return _pets
                 .Select(p => new Pet
                 {
                     Id = p.Id,
@@ -56,7 +69,9 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
                     SoldDate = p.SoldDate,
                     Type = p.Type
                 })
-                .FirstOrDefault(pet => pet.Id == id);
+                .FirstOrDefault(pet => pet.Id == id);*/
+
+            return _pets.FirstOrDefault(pet => pet.Id == id);
         }
 
         public Pet Delete(int id)

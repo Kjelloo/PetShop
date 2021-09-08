@@ -16,5 +16,6 @@ namespace CrashCourse.PetShop.Core.IServices
         Pet SavePet(Pet petToSave);
         Pet GetPetById(int id);
         Pet CreateAndSavePet(string name, PetType petType, DateTime birthDate, DateTime soldDate, string color, double price);
+        List<Pet> GetPetsByType(PetType petType);
     }
 }

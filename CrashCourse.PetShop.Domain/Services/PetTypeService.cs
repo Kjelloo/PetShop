@@ -33,7 +33,12 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public PetType GetPetTypeByName(string name)
         {
-            return !Exists(name) ? GetAllPetTypes().FirstOrDefault(type => type.Name == name) : null;
+            if (Exists(name))
+            {
+                return GetAllPetTypes().FirstOrDefault(type => type.Name == name);
+            }
+            
+            return null;
         }
         
         public List<PetType> GetAllPetTypes()
