@@ -1,0 +1,255 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.DependencyInjection/6.0.0-preview.7.21377.19": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0-preview.7.21377.19",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.7.21377.19"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0-preview.7.21377.19": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.7.21377.19": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "CrashCourse.PetShop.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CrashCourse.PetShop.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrashCourse.PetShop.Core.dll": {}
+        }
+      },
+      "CrashCourse.PetShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CrashCourse.PetShop.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CrashCourse.PetShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrashCourse.PetShop.Domain.dll": {}
+        }
+      },
+      "CrashCourse.PetShop.Infrastructure.InMemory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CrashCourse.PetShop.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CrashCourse.PetShop.Infrastructure.InMemory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrashCourse.PetShop.Infrastructure.InMemory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection/6.0.0-preview.7.21377.19": {
+      "sha512": "BjESHgE6sL2YfUsc7fyA6zWax/ByG0We+F5hRk9hvlSupFMzaMvKWhjAAzZnQG+tvqsrZxydrZtganxDpuqqeQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/6.0.0-preview.7.21377.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.6.0.0-preview.7.21377.19.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0-preview.7.21377.19": {
+      "sha512": "atV1M3Bmuc9+mIW1/AxgfYhZBH74P5897+sOq5zXQaNA/OBqAax1NQ/LZrIVqpFMYk5aPVv4vn2uirQ4Peuglg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0-preview.7.21377.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.7.21377.19": {
+      "sha512": "G9eKxgKE5UoyJdB4tpBFCWlgky34N11QDIjn92g6BwqII03yra4raegNNt3y3lmN6k+VDLIzgVMuddZ7LT6TEw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0-preview.7.21377.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0-preview.7.21377.19.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "CrashCourse.PetShop.Core/1.0.0": {
+      "type": "project",
+      "path": "../CrashCourse.PetShop.Core/CrashCourse.PetShop.Core.csproj",
+      "msbuildProject": "../CrashCourse.PetShop.Core/CrashCourse.PetShop.Core.csproj"
+    },
+    "CrashCourse.PetShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CrashCourse.PetShop.Domain/CrashCourse.PetShop.Domain.csproj",
+      "msbuildProject": "../CrashCourse.PetShop.Domain/CrashCourse.PetShop.Domain.csproj"
+    },
+    "CrashCourse.PetShop.Infrastructure.InMemory/1.0.0": {
+      "type": "project",
+      "path": "../CrashCourse.PetShop.Infrastructure.InMemory/CrashCourse.PetShop.Infrastructure.InMemory.csproj",
+      "msbuildProject": "../CrashCourse.PetShop.Infrastructure.InMemory/CrashCourse.PetShop.Infrastructure.InMemory.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "CrashCourse.PetShop.Core >= 1.0.0",
+      "CrashCourse.PetShop.Domain >= 1.0.0",
+      "CrashCourse.PetShop.Infrastructure.InMemory >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 6.0.0-preview.7.21377.19",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0-preview.7.21377.19"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kjell\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
+      "projectName": "CrashCourse.PetShop.UI.ConsoleApp",
+      "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\kjell\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kjell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj": {
+              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj"
+            },
+            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj": {
+              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj"
+            },
+            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj": {
+              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[6.0.0-preview.7.21377.19, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[6.0.0-preview.7.21377.19, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

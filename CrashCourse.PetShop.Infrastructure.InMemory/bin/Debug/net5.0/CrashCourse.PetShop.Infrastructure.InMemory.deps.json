@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CrashCourse.PetShop.Infrastructure.InMemory/1.0.0": {
+        "dependencies": {
+          "CrashCourse.PetShop.Core": "1.0.0"
+        },
+        "runtime": {
+          "CrashCourse.PetShop.Infrastructure.InMemory.dll": {}
+        }
+      },
+      "CrashCourse.PetShop.Core/1.0.0": {
+        "runtime": {
+          "CrashCourse.PetShop.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CrashCourse.PetShop.Infrastructure.InMemory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrashCourse.PetShop.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

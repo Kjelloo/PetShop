@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "XZsu1/a5VGnq5Yrxat+7LddRts/IwsAOX6mAT+tTk5W/STij2VU0+nbCtg1kZz41V1cmqzee/ZCJOBl0/0gBNw==",
+  "success": true,
+  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.WebApi\\CrashCourse.PetShop.UI.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

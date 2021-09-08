@@ -1,0 +1,12 @@
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\bin\Debug\net5.0\CrashCourse.PetShop.Core.deps.json
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\bin\Debug\net5.0\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\bin\Debug\net5.0\ref\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\bin\Debug\net5.0\CrashCourse.PetShop.Core.pdb
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.csproj.AssemblyReference.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.AssemblyInfoInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.AssemblyInfo.cs
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.csproj.CoreCompileInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\ref\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Core\obj\Debug\net5.0\CrashCourse.PetShop.Core.pdb
