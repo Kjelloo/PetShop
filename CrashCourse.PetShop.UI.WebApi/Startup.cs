@@ -1,10 +1,12 @@
 using CrashCourse.PetShop.Core.IRepositories;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Domain.Services;
-using CrashCourse.PetShop.Infrastructure.InMemory;
-using CrashCourse.PetShop.Infrastructure.InMemory.Repositories;
+using CrashCourse.PetShop.Infrastructure.Data;
+using CrashCourse.PetShop.Infrastructure.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,13 +26,16 @@ namespace CrashCourse.PetShop.UI.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<PetShopContext>(
+                opt => opt.UseInMemoryDatabase("InMemoryDB")
+                );
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "CSharpCrashCourse.PetShop.UI.WebApi", Version = "v1"});
             });
-
-            services.AddSingleton<FakeDb>();
+            
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IPetTypeRepository, PetTypeRepository>();
             services.AddScoped<IPetService, PetService>();

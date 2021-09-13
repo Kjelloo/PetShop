@@ -7,7 +7,7 @@ namespace CrashCourse.PetShop.Core.IRepositories
     {
         PetType Create(PetType petTypeCreate);
         PetType GetPetTypeByID(int id);
-        List<PetType> GetAllPetTypes();
+        IEnumerable<PetType> GetAllPetTypes();
         PetType UpdatePetType(PetType petTypeUpdate);
         PetType Delete(int id);
     }
