@@ -28,7 +28,7 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
             return _petTypes.FirstOrDefault(petType => petType.Id == id);
         }
 
-        public List<PetType> GetAllPetTypes()
+        public IEnumerable<PetType> GetAllPetTypes()
         {
             return _petTypes;
         }
