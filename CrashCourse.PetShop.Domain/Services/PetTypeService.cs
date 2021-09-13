@@ -58,9 +58,6 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public PetType SavePetType(PetType petTypeSave)
         {
-            if (GetAllPetTypes().Contains(petTypeSave))
-                throw new Exception("Pet type is already saved to the database");
-            
             return _petTypeRepo.Create(petTypeSave);
         }
 

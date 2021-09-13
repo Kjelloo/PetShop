@@ -25,13 +25,7 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
 
         public PetType GetPetTypeByID(int id)
         {
-            return _petTypes
-                .Select(pt => new PetType
-                {
-                    Id = pt.Id,
-                    Name = pt.Name
-                })
-                .FirstOrDefault(petType => petType.Id == id);
+            return _petTypes.FirstOrDefault(petType => petType.Id == id);
         }
 
         public List<PetType> GetAllPetTypes()
@@ -42,7 +36,7 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
         public PetType UpdatePetType(PetType petTypeUpdate)
         {
             var petTypeDb = GetPetTypeByID(petTypeUpdate.Id);
-            petTypeDb.Name = petTypeUpdate.Name;
+            petTypeDb.Name = petTypeUpdate.Name.ToLower();
             return petTypeDb;
         }
 
