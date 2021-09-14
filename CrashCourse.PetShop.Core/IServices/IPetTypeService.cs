@@ -5,14 +5,14 @@ namespace CrashCourse.PetShop.Core.IServices
 {
     public interface IPetTypeService
     {
-        PetType NewPetType(string name);
-        PetType GetPetTypeById(int id);
-        PetType GetPetTypeByName(string name);
-        List<PetType> GetAllPetTypes();
+        PetType New(string name);
+        PetType GetById(int id);
+        PetType GetByName(string name);
+        List<PetType> GetAll();
         bool Exists(string name);
-        PetType UpdatePetType(PetType petTypeUpdate);
-        PetType SavePetType(PetType petTypeSave);
-        PetType GetMatchingPetType(PetType matchingType);
-        PetType DeletePetType(int id);
+        PetType Update(PetType petTypeUpdate);
+        PetType Save(PetType petTypeSave);
+        PetType GetMatching(PetType matchingType);
+        PetType Delete(int id);
     }
 }

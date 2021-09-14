@@ -6,16 +6,16 @@ namespace CrashCourse.PetShop.Core.IServices
 {
     public interface IPetService
     {
-        Pet NewPet(string name, PetType type, DateTime birthDate, DateTime soldDate, string color, double price);
-        Pet UpdatePet(Pet petUpdate);
-        List<Pet> GetPetsByColor(string color);
-        List<Pet> SortPetsByAscendingPrice();
-        List<Pet> GetAllPets();
-        List<Pet> GetFiveCheapestPets();
-        Pet DeletePet(int id);
-        Pet SavePet(Pet petToSave);
-        Pet GetPetById(int id);
-        Pet CreateAndSavePet(string name, PetType petType, DateTime birthDate, DateTime soldDate, string color, double price);
-        List<Pet> GetPetsByType(PetType petType);
+        Pet New(string name, PetType type, DateTime birthDate, DateTime soldDate, string color, double price);
+        Pet Update(Pet petUpdate);
+        List<Pet> GetByColor(string color);
+        List<Pet> SortByAscendingPrice();
+        List<Pet> GetAll();
+        List<Pet> GetFiveCheapest();
+        Pet Delete(int id);
+        Pet Save(Pet petToSave);
+        Pet GetById(int id);
+        Pet CreateAndSave(string name, PetType petType, DateTime birthDate, DateTime soldDate, string color, double price);
+        List<Pet> GeByType(PetType petType);
     }
 }

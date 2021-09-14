@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39fab57d-8eda-4d44-8d4c-9c61fc590739" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Entities/PetEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Entities/PetTypeEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/Microsoft.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/SQLitePCLRaw.batteries_v2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/SQLitePCLRaw.core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/SQLitePCLRaw.nativelibrary.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/SQLitePCLRaw.provider.dynamic_cdecl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/alpine-x64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-arm/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-arm64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-armel/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-mips64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-x64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/linux-x86/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/win-arm/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/petShop.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/ref/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/bin/Debug/net5.0/ref/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/CrashCourse.PetShop.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/ref/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/Debug/net5.0/ref/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/bin/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/CrashCourse.PetShop.Infrastructure.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/CrashCourse.PetShop.Infrastructure.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/PetShopContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/PetShopContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Repositories/PetRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Repositories/PetRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Repositories/PetTypeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/Repositories/PetTypeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/ref/CrashCourse.PetShop.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/bin/Debug/net5.0/ref/CrashCourse.PetShop.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/CrashCourse.PetShop.Infrastructure.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/CrashCourse.PetShop.Infrastructure.Data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/CrashCourse.PetShop.Infrastructure.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/CrashCourse.PetShop.Infrastructure.Data.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/ref/CrashCourse.PetShop.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/Debug/net5.0/ref/CrashCourse.PetShop.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.Data/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.InMemory/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.Infrastructure.InMemory/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.ConsoleApp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.ConsoleApp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Controllers/PetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Controllers/PetsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/CrashCourse.PetShop.UI.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/CrashCourse.PetShop.UI.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Dtos/Pets/PostPetDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Dtos/Pets/PostPetDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.Infrastructure.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/ref/CrashCourse.PetShop.UI.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/bin/Debug/net5.0/ref/CrashCourse.PetShop.UI.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/CrashCourse.PetShop.UI.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/CrashCourse.PetShop.UI.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/CrashCourse.PetShop.UI.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/ref/CrashCourse.PetShop.UI.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/Debug/net5.0/ref/CrashCourse.PetShop.UI.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1y7jfwsqqL45tvv68EiX0XhcYAu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CrashCourse.PetShop.UI.WebApi/petShop.db" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+</project>

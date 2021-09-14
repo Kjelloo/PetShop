@@ -1,4 +1,4 @@
-﻿using CrashCourse.PetShop.Core.Models;
+﻿using CrashCourse.PetShop.Infrastructure.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CrashCourse.PetShop.Infrastructure.Data
@@ -7,9 +7,8 @@ namespace CrashCourse.PetShop.Infrastructure.Data
     {
         public PetShopContext(DbContextOptions<PetShopContext> options) : base(options) {}
         
-        public DbSet<Pet> Pets { get; set; }
-        public DbSet<PetType> PetTypes { get; set; }
-        
-        
+        public DbSet<PetEntity> Pets { get; set; }
+        public DbSet<PetTypeEntity> PetTypes { get; set; }
+
     }
 }

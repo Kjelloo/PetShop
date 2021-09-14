@@ -26,34 +26,24 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         {
             if (pet == null)
                 return BadRequest("Pet cannot be null");
-            
-            var petType = _petTypeService.SavePetType(_petTypeService.NewPetType(pet.Type.ToLower()));
 
-            var petCreated = _petService.CreateAndSavePet(pet.Name, petType, pet.BirthDate, pet.SoldDate, pet.Color, pet.Price);
+            if (_petTypeService.GetById(pet.Type) == null)
+                return BadRequest("Pet type by this id does not exist");
+
+            var petType = _petTypeService.GetById(pet.Type);
+            
+            var petCreated = _petService.CreateAndSave(pet.Name, petType, pet.BirthDate, pet.SoldDate, pet.Color, pet.Price);
             return Created("Pet created...", petCreated);
         }
         
         // GET api/Pets
         [HttpGet]
-        public ActionResult<List<GetPetDto>> GetALl()
+        public ActionResult<List<Pet>> GetALl()
         {
-            if (_petService.GetAllPets().Count == 0)
+            if (_petService.GetAll().Count == 0)
                 return NotFound("No pets found");
             
-            var pets = _petService.GetAllPets();
-            
-            var petsDto = pets.Select(pet => new GetPetDto
-                {
-                    Name = pet.Name,
-                    BirthDate = pet.BirthDate,
-                    SoldDate = pet.SoldDate,
-                    Color = pet.Color,
-                    Price = pet.Price,
-                    Type = pet.Type.Name
-                })
-                .ToList();
-
-            return petsDto;
+            return _petService.GetAll();
         }
 
         // GET api/Pets/Cheapest
@@ -61,17 +51,17 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         [Route("Cheapest")]
         public ActionResult<List<Pet>> GetFiveCheapest()
         {
-            if (_petService.GetFiveCheapestPets().Count == 0)
+            if (_petService.GetFiveCheapest().Count == 0)
                 return NotFound("No pets found");
             
-            return _petService.GetFiveCheapestPets();
+            return _petService.GetFiveCheapest();
         }
 
         // PUT api/Pets/{id}
         [HttpPut("{id:int}")]
         public ActionResult<Pet> Update(int id, PutPetDto petDto)
         {
-            if (id == 0 || _petService.GetPetById(id) == null)
+            if (id == 0 || _petService.GetById(id) == null)
                 return NotFound("Pet does not exist...");
 
             var pet = new Pet
@@ -82,20 +72,20 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
                 Name = petDto.Name,
                 Price = petDto.Price,
                 SoldDate = petDto.SoldDate,
-                Type = _petTypeService.NewPetType(petDto.Type)
+                Type = _petTypeService.GetById(petDto.Type)
             };
             
-            return Accepted("Pet updated...", _petService.UpdatePet(pet));
+            return Accepted("Pet updated...", _petService.Update(pet));
         }
         
         // DELETE api/Pets
         [HttpDelete]
         public ActionResult<Pet> Delete(int id)
         {
-            if (id == 0 || _petService.GetPetById(id) == null)
+            if (id == 0 || _petService.GetById(id) == null)
                 return NotFound("Pet by the given id does not exist");
 
-            _petService.DeletePet(id);
+            _petService.Delete(id);
             
             return NoContent();
         } 

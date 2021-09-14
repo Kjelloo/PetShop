@@ -50,7 +50,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
                 break;
             }
             
-            _petService.CreateAndSavePet(name, _petTypeService.NewPetType(petType), birthDate, soldDate, color, price);
+            _petService.CreateAndSave(name, _petTypeService.New(petType), birthDate, soldDate, color, price);
             
             Clear();
             Println("Pet added...");
@@ -101,7 +101,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
 
                 if (!int.TryParse(selection, out var selectionInt)) continue;
                 
-                if (_petService.GetPetById(selectionInt) != null)
+                if (_petService.GetById(selectionInt) != null)
                 {
                     var updateName = AskQuestionClear("New name: ");
                     var updateTypeString = AskQuestionClear("New pet type: ");
@@ -112,7 +112,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
                     
                     Clear();
 
-                    var updateType = _petTypeService.NewPetType(updateTypeString);
+                    var updateType = _petTypeService.New(updateTypeString);
 
                     var petUpdate = new Pet
                     {
@@ -125,7 +125,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
                         Price = updatePrice
                     };
 
-                    _petService.UpdatePet(petUpdate);
+                    _petService.Update(petUpdate);
                     
                     Println("Pet updated...");
                     Thread.Sleep(_sleepTime);
@@ -142,7 +142,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
         {
             while (int.TryParse(AskQuestionClear("Delete a pet by their id: "), out var selection))
             {
-                if (_petService.DeletePet(selection) != null)
+                if (_petService.Delete(selection) != null)
                 {
                     Clear();
                     Println("Pet deleted...");
@@ -217,7 +217,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
 
             var selection = AskQuestion("Pet type: ");
 
-            var petType = _petTypeService.GetPetTypeByName(selection);
+            var petType = _petTypeService.GetByName(selection);
 
             if (petType == null)
             {
@@ -229,7 +229,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
 
             Clear();
             
-            foreach (var pet in _petService.GetPetsByType(petType))
+            foreach (var pet in _petService.GeByType(petType))
             {
                 Println(pet.ToString());
             }
@@ -249,7 +249,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
         private void PrintAllPets()
         {
             Clear();
-            foreach (var pet in _petService.GetAllPets())
+            foreach (var pet in _petService.GetAll())
             {
                 Println(pet.ToString());
             }
@@ -261,7 +261,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
         private void PrintFiveCheapest()
         {
             Clear();
-            foreach (var pet in _petService.GetFiveCheapestPets())
+            foreach (var pet in _petService.GetFiveCheapest())
             {
                 Println(pet.ToString());
             }
@@ -273,7 +273,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
         private void PrintPetsByAscendingOrder()
         {
             Clear();
-            foreach (var pet in _petService.SortPetsByAscendingPrice())
+            foreach (var pet in _petService.SortByAscendingPrice())
             {
                 Println(pet.ToString());
             }

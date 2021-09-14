@@ -16,14 +16,14 @@ namespace CrashCourse.PetShop.Domain.Services
             _petTypeRepo = petTypeRepository;
         }
 
-        public PetType NewPetType(string name)
+        public PetType New(string name)
         {
-            if (Exists(name)) return GetPetTypeByName(name);
+            if (Exists(name)) return GetByName(name);
             var petType = new PetType {Name = name.ToLower()};
             return petType;
         }
 
-        public PetType GetPetTypeById(int id)
+        public PetType GetById(int id)
         {
             if (id <= 0)
                 throw new ArgumentException("ID cannot be 0 or below...");
@@ -31,42 +31,42 @@ namespace CrashCourse.PetShop.Domain.Services
             return _petTypeRepo.GetPetTypeByID(id);
         }
 
-        public PetType GetPetTypeByName(string name)
+        public PetType GetByName(string name)
         {
             if (Exists(name))
             {
-                return GetAllPetTypes().FirstOrDefault(type => type.Name == name);
+                return GetAll().FirstOrDefault(type => type.Name == name);
             }
             
             return null;
         }
         
-        public List<PetType> GetAllPetTypes()
+        public List<PetType> GetAll()
         {
             return _petTypeRepo.GetAllPetTypes() != null ? _petTypeRepo.GetAllPetTypes().ToList() : null;
         }
 
         public bool Exists(string name)
         {
-            return GetAllPetTypes() != null && GetAllPetTypes().Exists(petType => petType.Name == name.ToLower());
+            return GetAll() != null && GetAll().Exists(petType => petType.Name == name.ToLower());
         }
         
-        public PetType UpdatePetType(PetType petTypeUpdate)
+        public PetType Update(PetType petTypeUpdate)
         {
             return _petTypeRepo.UpdatePetType(petTypeUpdate);
         }
 
-        public PetType SavePetType(PetType petTypeSave)
+        public PetType Save(PetType petTypeSave)
         {
             return _petTypeRepo.Create(petTypeSave);
         }
 
-        public PetType GetMatchingPetType(PetType matchingType)
+        public PetType GetMatching(PetType matchingType)
         {
-            return GetAllPetTypes().Exists(type => type.Name == matchingType.Name) ? GetPetTypeByName(matchingType.Name) : null;
+            return GetAll().Exists(type => type.Name == matchingType.Name) ? GetByName(matchingType.Name) : null;
         }
 
-        public PetType DeletePetType(int id)
+        public PetType Delete(int id)
         {
             if (id <= 0)
                 throw new ArgumentException("ID cannot be 0 or below...");
