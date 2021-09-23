@@ -1,0 +1,15 @@
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.deps.json
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\ref\CrashCourse.PetShop.Auth.Helpers.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.pdb
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\bin\Debug\net5.0\CrashCourse.PetShop.Core.pdb
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.csproj.AssemblyReference.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.AssemblyInfoInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.AssemblyInfo.cs
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.csproj.CoreCompileInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.csproj.CopyComplete
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\ref\CrashCourse.PetShop.Auth.Helpers.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Auth.Helpers\obj\Debug\net5.0\CrashCourse.PetShop.Auth.Helpers.pdb

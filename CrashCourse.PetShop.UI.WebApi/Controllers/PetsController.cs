@@ -2,6 +2,7 @@
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.UI.WebApi.Dtos.Pets;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CrashCourse.PetShop.UI.WebApi.Controllers
@@ -20,6 +21,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         }
 
         // POST api/Pets
+        [Authorize]
         [HttpPost]
         public ActionResult<Pet> Create(PostPetDto pet)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.Infrastructure.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,8 @@ namespace CrashCourse.PetShop.Infrastructure.Data
         public DbSet<PetEntity> Pets { get; set; }
         public DbSet<PetTypeEntity> PetTypes { get; set; }
         public DbSet<OwnerEntity> Owners { get; set; }
+
+        public DbSet<UserEntity> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

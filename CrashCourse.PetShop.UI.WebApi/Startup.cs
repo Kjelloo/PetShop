@@ -1,8 +1,11 @@
+using System;
+using CrashCourse.PetShop.Auth.Helpers;
 using CrashCourse.PetShop.Core.IRepositories;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Domain.Services;
 using CrashCourse.PetShop.Infrastructure.Data;
 using CrashCourse.PetShop.Infrastructure.Data.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace CrashCourse.PetShop.UI.WebApi
@@ -26,6 +30,27 @@ namespace CrashCourse.PetShop.UI.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Byte[] secretBytes = new byte[40];
+            Random rand = new Random();
+            rand.NextBytes(secretBytes);
+            
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateAudience = false,
+                    //ValidAudience = "CoMetaApiClient",
+                    ValidateIssuer = false,
+                    //ValidIssuer = "CoMetaApi",
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(secretBytes),
+                    ValidateLifetime = true, //validate the expiration and not before values in the token
+                    ClockSkew = TimeSpan.FromMinutes(5) //5 minute tolerance for the expiration date
+                };
+            });
+            
+            
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,14 +69,17 @@ namespace CrashCourse.PetShop.UI.WebApi
                         .UseLoggerFactory(loggerFactory)
                         .UseSqlite("Data Source=petShop.db");
                 }, ServiceLifetime.Transient );
-
-
+            
+            
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IOwnerRepository, OwnerRepository>();
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IPetTypeRepository, PetTypeRepository>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IOwnerService, OwnerService>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IPetTypeService, PetTypeService>();
+            services.AddSingleton<IAuthenticationHelper>(new AuthenticationHelper(secretBytes));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +107,8 @@ namespace CrashCourse.PetShop.UI.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
