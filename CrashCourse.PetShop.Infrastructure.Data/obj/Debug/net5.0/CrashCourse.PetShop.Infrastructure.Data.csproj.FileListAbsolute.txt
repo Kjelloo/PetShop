@@ -1,0 +1,15 @@
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.deps.json
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\ref\CrashCourse.PetShop.Infrastructure.Data.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.pdb
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\CrashCourse.PetShop.Core.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\bin\Debug\net5.0\CrashCourse.PetShop.Core.pdb
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.csproj.AssemblyReference.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.AssemblyInfo.cs
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.csproj.CopyComplete
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\ref\CrashCourse.PetShop.Infrastructure.Data.dll
+C:\Programming\C# crash course\CrashCourse.PetShop\CrashCourse.PetShop.Infrastructure.Data\obj\Debug\net5.0\CrashCourse.PetShop.Infrastructure.Data.pdb

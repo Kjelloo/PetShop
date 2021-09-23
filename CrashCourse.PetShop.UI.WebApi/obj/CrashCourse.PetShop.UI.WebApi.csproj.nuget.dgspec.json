@@ -112,14 +112,14 @@
         }
       }
     },
-    "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj": {
+    "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj",
-        "projectName": "CrashCourse.PetShop.Infrastructure.InMemory",
-        "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj",
+        "projectUniqueName": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj",
+        "projectName": "CrashCourse.PetShop.Infrastructure.Data",
+        "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\kjell\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\obj\\",
+        "outputPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kjell\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -149,6 +149,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -196,8 +202,8 @@
               "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj": {
                 "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj"
               },
-              "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj": {
-                "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj"
+              "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj"
               }
             }
           }
@@ -212,6 +218,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"

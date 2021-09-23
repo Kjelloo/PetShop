@@ -11,6 +11,8 @@ namespace CrashCourse.PetShop.Core.Models
         public DateTime SoldDate { get; set; }
         public string Color { get; set; }
         public double Price { get; set; }
+        
+        public int OwnerId { get; set; }
 
         public override string ToString()
         {
