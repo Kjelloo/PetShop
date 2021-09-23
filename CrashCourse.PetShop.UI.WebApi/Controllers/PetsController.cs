@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.UI.WebApi.Dtos.Pets;
@@ -83,7 +82,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         public ActionResult<Pet> Delete(int id)
         {
             if (id == 0 || _petService.GetById(id) == null)
-                return NotFound("Pet by the given id does not exist");
+                return NotFound("Pet does not exist...");
 
             _petService.Delete(id);
             

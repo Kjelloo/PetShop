@@ -15,11 +15,11 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             _ctx = ctx;
         }
 
-        public PetType Create(PetType petTypeCreate)
+        public PetType Create(PetType createPetType)
         {
             var entity = new PetTypeEntity
             {
-                Name = petTypeCreate.Name
+                Name = createPetType.Name
             };
             
             var savedEntity = _ctx.PetTypes.Add(entity).Entity;
@@ -31,7 +31,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             };
         }
 
-        public PetType GetPetTypeByID(int id)
+        public PetType GetById(int id)
         {
             return _ctx.PetTypes
                 .Select(pt => new PetType
@@ -42,7 +42,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 .FirstOrDefault(type => type.Id == id);
         }
 
-        public IEnumerable<PetType> GetAllPetTypes()
+        public IEnumerable<PetType> GetAll()
         {
             return _ctx.PetTypes
                 .Select(p => new PetType
@@ -52,12 +52,12 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 }).ToList();
         }
 
-        public PetType UpdatePetType(PetType petTypeUpdate)
+        public PetType Update(PetType updatePetType)
         {
             var entity = new PetTypeEntity
             {
-                Id = petTypeUpdate.Id,
-                Name = petTypeUpdate.Name
+                Id = updatePetType.Id,
+                Name = updatePetType.Name
             };
             
             var savedEntity = _ctx.PetTypes.Update(entity).Entity;

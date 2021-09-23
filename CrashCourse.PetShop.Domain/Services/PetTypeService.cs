@@ -28,7 +28,7 @@ namespace CrashCourse.PetShop.Domain.Services
             if (id <= 0)
                 throw new ArgumentException("ID cannot be 0 or below...");
             
-            return _petTypeRepo.GetPetTypeByID(id);
+            return _petTypeRepo.GetById(id);
         }
 
         public PetType GetByName(string name)
@@ -43,7 +43,7 @@ namespace CrashCourse.PetShop.Domain.Services
         
         public List<PetType> GetAll()
         {
-            return _petTypeRepo.GetAllPetTypes() != null ? _petTypeRepo.GetAllPetTypes().ToList() : null;
+            return _petTypeRepo.GetAll() != null ? _petTypeRepo.GetAll().ToList() : null;
         }
 
         public bool Exists(string name)
@@ -53,7 +53,7 @@ namespace CrashCourse.PetShop.Domain.Services
         
         public PetType Update(PetType petTypeUpdate)
         {
-            return _petTypeRepo.UpdatePetType(petTypeUpdate);
+            return _petTypeRepo.Update(petTypeUpdate);
         }
 
         public PetType Save(PetType petTypeSave)

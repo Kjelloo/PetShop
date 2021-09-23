@@ -229,7 +229,7 @@ namespace CrashCourse.PetShop.UI.ConsoleApp
 
             Clear();
             
-            foreach (var pet in _petService.GeByType(petType))
+            foreach (var pet in _petService.GetByType(petType))
             {
                 Println(pet.ToString());
             }

@@ -10,6 +10,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Dtos.Pets
         public DateTime BirthDate { get; set; }
         public DateTime SoldDate { get; set; }
         public string Color { get; set; }
-        public double Price { get; set; }
+        public double Price { get; set; } 
+        public string Owner {get; set; }
     }
 }

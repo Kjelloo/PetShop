@@ -5,7 +5,6 @@ using CrashCourse.PetShop.Infrastructure.Data;
 using CrashCourse.PetShop.Infrastructure.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,9 +45,11 @@ namespace CrashCourse.PetShop.UI.WebApi
                         .UseSqlite("Data Source=petShop.db");
                 }, ServiceLifetime.Transient );
 
-            
+
+            services.AddScoped<IOwnerRepository, OwnerRepository>();
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IPetTypeRepository, PetTypeRepository>();
+            services.AddScoped<IOwnerService, OwnerService>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IPetTypeService, PetTypeService>();
         }

@@ -15,17 +15,17 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             _ctx = ctx;
         }
 
-        public Pet Create(Pet petCreate)
+        public Pet Create(Pet createPet)
         {
 
             var entity = new PetEntity
             {
-                Name = petCreate.Name,
-                BirthDate = petCreate.BirthDate,
-                SoldDate = petCreate.SoldDate,
-                Color = petCreate.Color,
-                Price = petCreate.Price,
-                PetTypeId = petCreate.Type.Id
+                Name = createPet.Name,
+                BirthDate = createPet.BirthDate,
+                SoldDate = createPet.SoldDate,
+                Color = createPet.Color,
+                Price = createPet.Price,
+                PetTypeId = createPet.Type.Id
             };
             
             var savedEntity = _ctx.Pets.Add(entity).Entity;
@@ -42,17 +42,17 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             };
         }
 
-        public Pet Update(Pet petUpdate)
+        public Pet Update(Pet updatePet)
         {
             var entity = new PetEntity()
             {
-                Id = petUpdate.Id,
-                Name = petUpdate.Name,
-                BirthDate = petUpdate.BirthDate,
-                SoldDate = petUpdate.SoldDate,
-                Color = petUpdate.Color,
-                Price = petUpdate.Price,
-                PetTypeId = petUpdate.Type.Id
+                Id = updatePet.Id,
+                Name = updatePet.Name,
+                BirthDate = updatePet.BirthDate,
+                SoldDate = updatePet.SoldDate,
+                Color = updatePet.Color,
+                Price = updatePet.Price,
+                PetTypeId = updatePet.Type.Id
             };
             
             var savedEntity = _ctx.Pets.Update(entity).Entity;
@@ -69,7 +69,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             };
         }
 
-        public IEnumerable<Pet> GetAllPets()
+        public IEnumerable<Pet> GetAll()
         {
             return _ctx.Pets
                 .Select(pe => new Pet
@@ -85,7 +85,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 .ToList();
         }
 
-        public Pet GetPetById(int id)
+        public Pet GetById(int id)
         {
             return _ctx.Pets
                 .Select(pe => new Pet 
@@ -102,18 +102,18 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
 
         public Pet Delete(int id)
         {
-            var petDeleted = _ctx.Pets.Remove(new PetEntity() {Id = id});
+            var petDeleted = _ctx.Pets.Remove(new PetEntity() {Id = id}).Entity;
             _ctx.SaveChanges();
             
             return new Pet
             {
-                Id = petDeleted.Entity.Id,
-                Name = petDeleted.Entity.Name,
-                BirthDate = petDeleted.Entity.BirthDate,
-                Color = petDeleted.Entity.Color,
-                Price = petDeleted.Entity.Price,
-                SoldDate = petDeleted.Entity.SoldDate,
-                Type = new PetType {Id = petDeleted.Entity.PetTypeId}
+                Id = petDeleted.Id,
+                Name = petDeleted.Name,
+                BirthDate = petDeleted.BirthDate,
+                Color = petDeleted.Color,
+                Price = petDeleted.Price,
+                SoldDate = petDeleted.SoldDate,
+                Type = new PetType {Id = petDeleted.PetTypeId}
             };
         }
     }

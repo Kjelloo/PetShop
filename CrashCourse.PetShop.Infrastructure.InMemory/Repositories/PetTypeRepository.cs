@@ -16,33 +16,33 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
             _id = fakeDb.PetTypeId;
         }
 
-        public PetType Create(PetType petTypeCreate)
+        public PetType Create(PetType createPetType)
         {
-            petTypeCreate.Id = _id++;
-            _petTypes.Add(petTypeCreate);
-            return petTypeCreate;
+            createPetType.Id = _id++;
+            _petTypes.Add(createPetType);
+            return createPetType;
         }
 
-        public PetType GetPetTypeByID(int id)
+        public PetType GetById(int id)
         {
             return _petTypes.FirstOrDefault(petType => petType.Id == id);
         }
 
-        public IEnumerable<PetType> GetAllPetTypes()
+        public IEnumerable<PetType> GetAll()
         {
             return _petTypes;
         }
 
-        public PetType UpdatePetType(PetType petTypeUpdate)
+        public PetType Update(PetType updatePetType)
         {
-            var petTypeDb = GetPetTypeByID(petTypeUpdate.Id);
-            petTypeDb.Name = petTypeUpdate.Name.ToLower();
+            var petTypeDb = GetById(updatePetType.Id);
+            petTypeDb.Name = updatePetType.Name.ToLower();
             return petTypeDb;
         }
 
         public PetType Delete(int id)
         {
-            var petTypeDb = GetPetTypeByID(id);
+            var petTypeDb = GetById(id);
             if (petTypeDb == null) return null;
             _petTypes.Remove(petTypeDb);
             return petTypeDb;

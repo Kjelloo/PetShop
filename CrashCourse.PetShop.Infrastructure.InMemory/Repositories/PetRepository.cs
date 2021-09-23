@@ -17,46 +17,46 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
             _id = fakeDb.PetId;
         }
 
-        public Pet Create(Pet petCreate)
+        public Pet Create(Pet createPet)
         {
-            petCreate.Id = _id++;
-            _pets.Add(petCreate);
-            return petCreate;
+            createPet.Id = _id++;
+            _pets.Add(createPet);
+            return createPet;
         }
 
-        public Pet Update(Pet petUpdate)
+        public Pet Update(Pet updatePet)
         {
-            var petDb = GetPetById(petUpdate.Id);
+            var petDb = GetById(updatePet.Id);
             
             if (petDb == null) return null;
 
-            if (petUpdate.Name != null)
-                petDb.Name = petUpdate.Name;
+            if (updatePet.Name != null)
+                petDb.Name = updatePet.Name;
             
-            if (petUpdate.Color != null)
-                petDb.Color = petUpdate.Color;
+            if (updatePet.Color != null)
+                petDb.Color = updatePet.Color;
             
-            if (petUpdate.Price != null)
-                petDb.Price = petUpdate.Price;
+            if (updatePet.Price != null)
+                petDb.Price = updatePet.Price;
             
-            if (petUpdate.Type != null)
-                petDb.Type = petUpdate.Type;
+            if (updatePet.Type != null)
+                petDb.Type = updatePet.Type;
             
-            if (petUpdate.BirthDate != DateTime.MinValue)
-                petDb.BirthDate = petUpdate.BirthDate;
+            if (updatePet.BirthDate != DateTime.MinValue)
+                petDb.BirthDate = updatePet.BirthDate;
             
-            if (petUpdate.SoldDate != DateTime.MinValue) 
-                petDb.SoldDate = petUpdate.SoldDate;
+            if (updatePet.SoldDate != DateTime.MinValue) 
+                petDb.SoldDate = updatePet.SoldDate;
 
             return petDb;
         }
 
-        public IEnumerable<Pet> GetAllPets()
+        public IEnumerable<Pet> GetAll()
         {
             return _pets;
         }
 
-        public Pet GetPetById(int id)
+        public Pet GetById(int id)
         {
             /*return _pets
                 .Select(p => new Pet
@@ -76,7 +76,7 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
 
         public Pet Delete(int id)
         {
-            var petDb = GetPetById(id);
+            var petDb = GetById(id);
             if (petDb == null) return null;
             _pets.Remove(petDb);
             return petDb;

@@ -11,5 +11,6 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Entities
         public string Color { get; set; }
         public double Price { get; set; }
         public int PetTypeId { get; set; }
+        public int OwnerId { get; set; }
     }
 }

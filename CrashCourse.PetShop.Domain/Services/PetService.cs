@@ -32,10 +32,9 @@ namespace CrashCourse.PetShop.Domain.Services
             return pet;
         }
 
-        public Pet Update(Pet petUpdate)
+        public Pet Update(Pet updatePet)
         {
-            petUpdate = _petRepo.Update(petUpdate);
-            return petUpdate;
+            return _petRepo.Update(updatePet);
         }
 
         public List<Pet> GetByColor(string color)
@@ -54,7 +53,7 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public List<Pet> GetAll()
         {
-            return _petRepo.GetAllPets().ToList();
+            return _petRepo.GetAll().ToList();
         }
 
         public List<Pet> GetFiveCheapest()
@@ -71,12 +70,12 @@ namespace CrashCourse.PetShop.Domain.Services
         }
 
         //Saves a pet
-        public Pet Save(Pet petToSave)
+        public Pet Save(Pet savePet)
         {
-            if (GetAll().Contains(petToSave))
+            if (GetAll().Contains(savePet))
                 throw new Exception("Pet is already saved to the database");
             
-            return _petRepo.Create(petToSave);
+            return _petRepo.Create(savePet);
         }
 
         public Pet GetById(int id)
@@ -84,7 +83,7 @@ namespace CrashCourse.PetShop.Domain.Services
             if (id <= 0)
                 throw new ArgumentException("ID cannot be 0 or below...");
 
-            return _petRepo.GetPetById(id);
+            return _petRepo.GetById(id);
         }
 
         // Creates pet and saves it to the database
@@ -98,9 +97,10 @@ namespace CrashCourse.PetShop.Domain.Services
             return Save(pet);
         }
 
-        public List<Pet> GeByType(PetType petType)
+        public List<Pet> GetByType(PetType petType)
         {
             return GetAll().FindAll(pet => Equals(pet.Type, petType));
         }
+        
     }
 }
