@@ -1,4 +1,5 @@
 ﻿using System;
+using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.Infrastructure.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,16 @@ namespace CrashCourse.PetShop.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            for (var i = 1; i < 1000; i++)
+            {
+                modelBuilder.Entity<PetEntity>().HasData(new PetEntity()
+                {
+                    Id = i,
+                    Name = "Name" + i
+                });
+            }            
+            
             modelBuilder.Entity<PetTypeEntity>().HasData(new PetTypeEntity
             {
                 Id = 1,
@@ -38,6 +49,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data
                 Name = "Mikkel"
             });
             
+            /* 
             modelBuilder.Entity<PetEntity>().HasData(new PetEntity
             {
                 Id = 1,
@@ -60,7 +72,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data
                 OwnerId = 2,
                 PetTypeId = 1,
                 Price = 150
-            });
+            });*/
             
             
         }

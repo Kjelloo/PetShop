@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.UI.WebApi.Dtos.Pets;
@@ -21,7 +23,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
 
         // POST api/Pets
         [HttpPost]
-        public ActionResult<Pet> Create(PostPetDto pet)
+        public ActionResult<Pet> Create([FromBody] PostPetDto pet)
         {
             if (pet == null)
                 return BadRequest("Pet cannot be null");
@@ -37,12 +39,37 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         
         // GET api/Pets
         [HttpGet]
-        public ActionResult<List<Pet>> GetALl()
+        public ActionResult<List<GetAllPetDto>> GetALl([FromQuery] Filter filter)
         {
-            if (_petService.GetAll().Count == 0)
+
+            var totalCount = _petService.GetPetCount();
+
+            if (filter.Page < 1 || (filter.Page - 1) * filter.Count > totalCount)
+            {
+                return BadRequest("Page exceeds total pet count, max page allowed with current count: " +
+                                  (totalCount / filter.Count + 1));
+            }
+
+            if (_petService.GetAll(null).Count == 0)
                 return NotFound("No pets found");
-            
-            return _petService.GetAll();
+
+            var list = _petService.GetAll(filter);
+            return Ok(new GetAllPetDto
+            {
+                List = list.Select(pe => new GetPetDto
+                {
+                    Id = pe.Id,
+                    Name = pe.Name,
+                    BirthDate = pe.BirthDate,
+                    Color = pe.Color,
+                    Owner = pe.OwnerId.ToString(),
+                    Price = pe.Price,
+                    SoldDate = pe.SoldDate,
+                    Type = pe.Type.Name
+                }).ToList(),
+                TotalCount = totalCount
+
+            });
         }
 
         // GET api/Pets/Cheapest

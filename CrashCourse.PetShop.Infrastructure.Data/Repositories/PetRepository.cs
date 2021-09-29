@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IRepositories;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.Infrastructure.Data.Entities;
@@ -69,9 +70,11 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             };
         }
 
-        public IEnumerable<Pet> GetAll()
+        public IEnumerable<Pet> GetAll(Filter filter)
         {
-            return _ctx.Pets
+            
+            
+            var pets = _ctx.Pets
                 .Select(pe => new Pet
                 {
                     Id = pe.Id,
@@ -81,8 +84,9 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                     Price = pe.Price,
                     SoldDate = pe.SoldDate,
                     Type = new PetType {Id = pe.PetTypeId}
-                })
-                .ToList();
+                });
+
+            return filter == null ? pets.ToList() : pets.Skip(filter.Count * (filter.Page - 1)).Take(filter.Count).ToList();
         }
 
         public Pet GetById(int id)
@@ -115,6 +119,11 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 SoldDate = petDeleted.SoldDate,
                 Type = new PetType {Id = petDeleted.PetTypeId}
             };
+        }
+
+        public int Count()
+        {
+            return _ctx.Pets.Count();
         }
     }
 }
