@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.UI.WebApi.Dtos.Pets;
@@ -23,7 +26,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         // POST api/Pets
         [Authorize]
         [HttpPost]
-        public ActionResult<Pet> Create(PostPetDto pet)
+        public ActionResult<Pet> Create([FromBody] PostPetDto pet)
         {
             if (pet == null)
                 return BadRequest("Pet cannot be null");
@@ -39,12 +42,35 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         
         // GET api/Pets
         [HttpGet]
-        public ActionResult<List<Pet>> GetALl()
+        public ActionResult<List<GetAllPetDto>> GetALl([FromQuery] Filter filter)
         {
-            if (_petService.GetAll().Count == 0)
-                return NotFound("No pets found");
-            
-            return _petService.GetAll();
+            var totalCount = _petService.GetPetCount();
+
+            try
+            {
+                var list = _petService.GetAll(filter);
+                return Ok(new GetAllPetDto
+                {
+                    List = list.Select(pe => new GetPetDto
+                    {
+                        Id = pe.Id,
+                        Name = pe.Name,
+                        BirthDate = pe.BirthDate,
+                        Color = pe.Color,
+                        Owner = pe.OwnerId.ToString(),
+                        Price = pe.Price,
+                        SoldDate = pe.SoldDate,
+                        Type = pe.Type.Name
+                    }).ToList(),
+                    TotalCount = totalCount
+
+                });
+            }
+            catch (ArgumentException e)
+            {
+                return BadRequest(e.Message);
+            }
+
         }
 
         // GET api/Pets/Cheapest
