@@ -47,12 +47,15 @@ namespace CrashCourse.PetShop.Auth.Helpers
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Sid, user.Id.ToString())
             };
-            
-            if (user.IsAdmin)
-                claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
 
+            foreach (var role in user.Roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role.Name));
+            }
+            
             var token = new JwtSecurityToken(
                 new JwtHeader(
                     new SigningCredentials(

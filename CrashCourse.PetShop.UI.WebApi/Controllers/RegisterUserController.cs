@@ -27,13 +27,23 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         [HttpPost]
         public ActionResult<User> Create([FromBody] PostUserDto userDto)
         {
+            var userCheck = _userService.GetAll().FirstOrDefault(u => u.Username == userDto.Username);
+
+            //Does already contain a user with the given username?
+            if (userCheck != null)
+                return Unauthorized();
+
+            List<Role> roles = new List<Role>();
+            
+            roles.Add();
+            
             _helper.CreatePasswordHash(userDto.Password, out var passwordHash, out var salt);
 
             var user = new User
             {
                 Username = userDto.Username,
                 Password = userDto.Password,
-                IsAdmin = false,
+                Roles = roles,
                 PasswordHash = passwordHash,
                 PasswordSalt = salt
             };

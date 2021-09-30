@@ -16,7 +16,7 @@ namespace CrashCourse.PetShop.Domain.Services
             _userRepository = userRepository;
         }
 
-        public User New(string username, string password, byte[] passwordHash, byte[] passwordSalt, bool isAdmin)
+        public User New(string username, string password, byte[] passwordHash, byte[] passwordSalt, List<Role> roles)
         {
             var user = new User
             {
@@ -24,7 +24,7 @@ namespace CrashCourse.PetShop.Domain.Services
                 Password = password,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                IsAdmin = isAdmin
+                Roles = roles
             };
 
             return user;

@@ -15,6 +15,8 @@ namespace CrashCourse.PetShop.Infrastructure.Data
 
         public DbSet<UserEntity> Users { get; set; }
 
+        public DbSet<RoleEntity> Roles { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -50,6 +52,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data
                 Id = 2,
                 Name = "Mikkel"
             });
+            
             
             /* 
             modelBuilder.Entity<PetEntity>().HasData(new PetEntity

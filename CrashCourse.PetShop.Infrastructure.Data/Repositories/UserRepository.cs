@@ -25,7 +25,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                     Password = ue.Password,
                     PasswordHash = ue.PasswordHash,
                     PasswordSalt = ue.PasswordSalt,
-                    IsAdmin = ue.IsAdmin
+                    Roles = ue.Roles
                 }).ToList();
         }
 
@@ -39,7 +39,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                     Password = ue.Password,
                     PasswordHash = ue.PasswordHash,
                     PasswordSalt = ue.PasswordSalt,
-                    IsAdmin = ue.IsAdmin
+                    Roles = ue.Roles
                 }).FirstOrDefault(ue => ue.Id == id);
         }
 
@@ -51,7 +51,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 Password = user.Password,
                 PasswordHash = user.PasswordHash,
                 PasswordSalt = user.PasswordSalt,
-                IsAdmin = user.IsAdmin
+                Roles = user.Roles
             };
 
             var savedEntity = _ctx.Users.Add(entity).Entity;
@@ -64,7 +64,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                 Password = savedEntity.Password,
                 PasswordHash = savedEntity.PasswordHash,
                 PasswordSalt = savedEntity.PasswordSalt,
-                IsAdmin = savedEntity.IsAdmin
+                Roles = savedEntity.Roles
             };
         }
     }

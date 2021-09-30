@@ -48,9 +48,7 @@ namespace CrashCourse.PetShop.UI.WebApi
                     ClockSkew = TimeSpan.FromMinutes(5) //5 minute tolerance for the expiration date
                 };
             });
-            
-            
-            
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -69,7 +67,6 @@ namespace CrashCourse.PetShop.UI.WebApi
                         .UseLoggerFactory(loggerFactory)
                         .UseSqlite("Data Source=petShop.db");
                 }, ServiceLifetime.Transient );
-            
             
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IOwnerRepository, OwnerRepository>();
@@ -106,9 +103,8 @@ namespace CrashCourse.PetShop.UI.WebApi
 
             app.UseRouting();
 
-            app.UseAuthorization();
-            
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

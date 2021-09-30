@@ -1,4 +1,6 @@
-﻿namespace CrashCourse.PetShop.Core.Models
+﻿using System.Collections.Generic;
+
+namespace CrashCourse.PetShop.Core.Models
 {
     public class User
     {
@@ -7,6 +9,6 @@
         public string Password { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
-        public bool IsAdmin { get; set; }
+        public List<Role> Roles { get; set; }
     }
 }
