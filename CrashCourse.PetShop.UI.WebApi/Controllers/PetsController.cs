@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IServices;
@@ -41,35 +42,33 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         [HttpGet]
         public ActionResult<List<GetAllPetDto>> GetALl([FromQuery] Filter filter)
         {
-
             var totalCount = _petService.GetPetCount();
 
-            if (filter.Page < 1 || (filter.Page - 1) * filter.Count > totalCount)
+            try
             {
-                return BadRequest("Page exceeds total pet count, max page allowed with current count: " +
-                                  (totalCount / filter.Count + 1));
+                var list = _petService.GetAll(filter);
+                return Ok(new GetAllPetDto
+                {
+                    List = list.Select(pe => new GetPetDto
+                    {
+                        Id = pe.Id,
+                        Name = pe.Name,
+                        BirthDate = pe.BirthDate,
+                        Color = pe.Color,
+                        Owner = pe.OwnerId.ToString(),
+                        Price = pe.Price,
+                        SoldDate = pe.SoldDate,
+                        Type = pe.Type.Name
+                    }).ToList(),
+                    TotalCount = totalCount
+
+                });
+            }
+            catch (ArgumentException e)
+            {
+                return BadRequest(e.Message);
             }
 
-            if (_petService.GetAll(null).Count == 0)
-                return NotFound("No pets found");
-
-            var list = _petService.GetAll(filter);
-            return Ok(new GetAllPetDto
-            {
-                List = list.Select(pe => new GetPetDto
-                {
-                    Id = pe.Id,
-                    Name = pe.Name,
-                    BirthDate = pe.BirthDate,
-                    Color = pe.Color,
-                    Owner = pe.OwnerId.ToString(),
-                    Price = pe.Price,
-                    SoldDate = pe.SoldDate,
-                    Type = pe.Type.Name
-                }).ToList(),
-                TotalCount = totalCount
-
-            });
         }
 
         // GET api/Pets/Cheapest

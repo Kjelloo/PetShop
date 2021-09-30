@@ -21,7 +21,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data
                 modelBuilder.Entity<PetEntity>().HasData(new PetEntity()
                 {
                     Id = i,
-                    Name = "Name" + i
+                    Name = "Name " + i
                 });
             }            
             

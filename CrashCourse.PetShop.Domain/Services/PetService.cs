@@ -54,6 +54,23 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public List<Pet> GetAll(Filter filter)
         {
+
+            if (filter == null)
+            {
+                return _petRepo.GetAll(null).ToList();
+            }
+
+            var totalCount = _petRepo.Count();
+            
+            if (filter.Page < 1 || (filter.Page - 1) * filter.Count > totalCount)
+            {
+                throw new ArgumentException("Page exceeds total pet count, max page allowed with current count: " +
+                                  (totalCount / filter.Count + 1));
+            }
+
+            if (GetAll(null).Count == 0)
+                throw new Exception("No pets found");
+            
             return _petRepo.GetAll(filter).ToList();
         }
 
