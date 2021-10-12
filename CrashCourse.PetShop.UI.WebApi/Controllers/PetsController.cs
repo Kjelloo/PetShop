@@ -40,7 +40,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
             return Created("Pet created...", petCreated);
         }
         
-        // GET api/Pets
+        // GET api/Pets WITH FILTERING
         [HttpGet]
         public ActionResult<List<GetAllPetDto>> GetALl([FromQuery] Filter filter)
         {
@@ -72,6 +72,7 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
             }
 
         }
+
 
         // GET api/Pets/Cheapest
         [HttpGet]

@@ -35,7 +35,6 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
 
             List<Role> roles = new List<Role>();
             
-            roles.Add();
             
             _helper.CreatePasswordHash(userDto.Password, out var passwordHash, out var salt);
 
