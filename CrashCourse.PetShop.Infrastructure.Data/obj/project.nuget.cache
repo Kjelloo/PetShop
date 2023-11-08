@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aWk/2xpCQhKYWYVdqI1rtMy54gdnn2lNBRv5bfGynhSePLD8it4H2gv6MQxOqyW4xp+ZerqwZVMBh29L9iaM8g==",
+  "dgSpecHash": "AOhjf+fiTD6Q9XRirGOEvgjDVJYm7zopyy+OiQh92THkbe/BjmRD4mb9Ps7Ln+nvS8k3Yutc+frajcbQiSsJDQ==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj",
+  "projectFilePath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Infrastructure.Data\\CrashCourse.PetShop.Infrastructure.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
@@ -17,7 +17,10 @@
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\kjell\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\kjell\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

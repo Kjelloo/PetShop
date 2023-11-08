@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
 using CrashCourse.PetShop.UI.WebApi.Dtos.Pets;
@@ -40,13 +39,13 @@ namespace CrashCourse.PetShop.UI.WebApi.Controllers
         
         // GET api/Pets
         [HttpGet]
-        public ActionResult<List<GetAllPetDto>> GetALl([FromQuery] Filter filter)
+        public ActionResult<List<GetAllPetDto>> GetALl()
         {
             var totalCount = _petService.GetPetCount();
 
             try
             {
-                var list = _petService.GetAll(filter);
+                var list = _petService.GetAll();
                 return Ok(new GetAllPetDto
                 {
                     List = list.Select(pe => new GetPetDto

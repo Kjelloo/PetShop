@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WWLcOSTA6iCbw96lqegvjClQokJiWuKVtaivQi/l1mvUgeFN1E0EnaN2eiq258x0OgqZqIFIl5yU2egKz93YKg==",
+  "dgSpecHash": "a8E5SxNjccFA+nbo/YG/biacXw3NnwwwxVCutwlqRUP/XaTCzdNJOax49yyv5ZOH3AdWf9KbYYQOExr9dwLjPg==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

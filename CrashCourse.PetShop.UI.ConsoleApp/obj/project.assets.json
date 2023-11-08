@@ -9,28 +9,40 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.7.21377.19"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0-preview.7.21377.19": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.7.21377.19": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -183,11 +195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
       "projectName": "CrashCourse.PetShop.UI.ConsoleApp",
-      "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
+      "projectPath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\kjell\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kjell\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -202,14 +214,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj": {
-              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj"
+            "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj": {
+              "projectPath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Core\\CrashCourse.PetShop.Core.csproj"
             },
-            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj": {
-              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj"
+            "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj"
             },
-            "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj": {
-              "projectPath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj"
+            "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj": {
+              "projectPath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Infrastructure.InMemory\\CrashCourse.PetShop.Infrastructure.InMemory.csproj"
             }
           }
         }
@@ -239,16 +251,35 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

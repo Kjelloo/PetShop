@@ -71,7 +71,7 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
             };
         }
 
-        public IEnumerable<Pet> GetAll(Filter filter)
+        public IEnumerable<Pet> GetAll()
         {
             var selectQuery = _ctx.Pets
                 .Select(pe => new Pet
@@ -84,59 +84,8 @@ namespace CrashCourse.PetShop.Infrastructure.Data.Repositories
                     SoldDate = pe.SoldDate,
                     Type = new PetType {Id = pe.PetTypeId}
                 });
-
-            if (filter == null)
-            {
-                return selectQuery.ToList();
-            }
-
-            var paging = selectQuery.Skip(filter.Count * (filter.Page - 1)).Take(filter.Count);
-
-            if (string.IsNullOrEmpty(filter.SortOrder) || filter.SortOrder.Equals("asc"))
-            {
-                switch (filter.SortBy)
-                {
-                    case "id":
-                        paging = paging.OrderBy(p => p.Id);
-                        break;
-                    case "name":
-                        paging = paging.OrderBy(p => p.Name);
-                        break;
-                }
-            }
-            else if (filter.SortOrder.Equals("desc"))
-            {
-                switch (filter.SortBy)
-                {
-                    case "id":
-                        paging = paging.OrderByDescending(p => p.Id);
-                        break;
-                    case "name":
-                        paging = paging.OrderByDescending(p => p.Name);
-                        break;
-                }
-            }
-
-            if (!string.IsNullOrEmpty(filter.Search))
-            {
-                switch (filter.SearchBy.ToLower())
-                {
-                    case "name":
-                        paging = paging.Where(p => p.Name.Contains(filter.Search.ToLower()));
-                        break;
-                    case "color":
-                        paging = paging.Where(p => p.Color.Contains(filter.Search));
-                        break;
-                    case "owner":
-                        paging = paging.Where(p => p.OwnerId.Equals(int.Parse(filter.Search)));
-                        break;
-                    default:
-                        throw new ArgumentException("Not a valid search term (name, color, ownerId)");
-                }
-                
-            } 
             
-            return paging.ToList();
+            return selectQuery.ToList();
         }
 
         public Pet GetById(int id)

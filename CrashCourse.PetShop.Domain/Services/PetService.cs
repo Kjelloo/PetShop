@@ -38,45 +38,43 @@ namespace CrashCourse.PetShop.Domain.Services
             return _petRepo.Update(updatePet);
         }
 
-        public List<Pet> GetByColor(Filter filter, string color)
+        public List<Pet> GetByColor(string color)
         {
             // if not a number
             if (int.TryParse(color, out int n))
                 throw new ArgumentException("Color has to be a string");
             
-            return new List<Pet>(GetAll(filter).Where(pet => pet.Color == color));
+            return new List<Pet>(GetAll().Where(pet => pet.Color == color));
         }
 
-        public List<Pet> SortByAscendingPrice(Filter filter)
+        public List<Pet> SortByAscendingPrice()
         {
-            return new List<Pet>(GetAll(filter).OrderBy(pet => pet.Price));
+            return new List<Pet>(GetAll().OrderBy(pet => pet.Price));
         }
+        
 
-        public List<Pet> GetAll(Filter filter)
+        public List<Pet> GetAll()
         {
 
-            if (filter == null)
-            {
-                return _petRepo.GetAll(null).ToList();
-            }
+            // if (filter == null)
+            // {
+            //     return _petRepo.GetAll(null).ToList();
+            // }
 
             var totalCount = _petRepo.Count();
             
-            if (filter.Page < 1 || (filter.Page - 1) * filter.Count > totalCount)
-            {
-                throw new ArgumentException("Page exceeds total pet count, max page allowed with current count: " +
-                                  (totalCount / filter.Count + 1));
-            }
-
-            if (GetAll(null).Count == 0)
-                throw new Exception("No pets found");
+            // if (filter.Page < 1 || (filter.Page - 1) * filter.Count > totalCount)
+            // {
+            //     throw new ArgumentException("Page exceeds total pet count, max page allowed with current count: " +
+            //                       (totalCount / filter.Count + 1));
+            // }
             
-            return _petRepo.GetAll(filter).ToList();
+            return _petRepo.GetAll().ToList();
         }
 
         public List<Pet> GetFiveCheapest()
         {
-            return SortByAscendingPrice(null).Take(5).ToList();
+            return SortByAscendingPrice().Take(5).ToList();
         }
 
         public Pet Delete(int id)
@@ -90,7 +88,7 @@ namespace CrashCourse.PetShop.Domain.Services
         //Saves a pet
         public Pet Save(Pet savePet)
         {
-            if (GetAll(null).Contains(savePet))
+            if (GetAll().Contains(savePet))
                 throw new Exception("Pet is already saved to the database");
             
             return _petRepo.Create(savePet);
@@ -109,7 +107,7 @@ namespace CrashCourse.PetShop.Domain.Services
         {
             var pet = New(name, petType, birthDate, soldDate, color, price);
             
-            if (GetAll(null).Contains(pet))
+            if (GetAll().Contains(pet))
                 throw new Exception("Pet is already saved to the database");
             
             return Save(pet);
@@ -117,7 +115,7 @@ namespace CrashCourse.PetShop.Domain.Services
 
         public List<Pet> GetByType(PetType petType)
         {
-            return GetAll(null).FindAll(pet => Equals(pet.Type, petType));
+            return GetAll().FindAll(pet => Equals(pet.Type, petType));
         }
 
         public int GetPetCount()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TcMKXQOhQ7kJ7pt5lW0glYc7Jwmrnv7Cic7hRoAdXBBGeJ8yKPMuvA+AmVunR9JyZHkWER7EbLNMRTN8HTQXlA==",
+  "dgSpecHash": "cMsjYvQvZN1PI3DGDRx5B9QtQHpT4EhgvId0zoAvUlONCf6B9qFlmG8KmBEGFJnxyAtj2u8s8LfUk78QDtwHZg==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.WebApi\\CrashCourse.PetShop.UI.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.UI.WebApi\\CrashCourse.PetShop.UI.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kjell\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -174,7 +174,11 @@
     "C:\\Users\\kjell\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\kjell\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\kjell\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

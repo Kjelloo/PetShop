@@ -81,5 +81,10 @@ namespace CrashCourse.PetShop.Infrastructure.InMemory.Repositories
             _pets.Remove(petDb);
             return petDb;
         }
+
+        public int Count()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

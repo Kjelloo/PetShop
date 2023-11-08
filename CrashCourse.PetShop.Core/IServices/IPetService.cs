@@ -9,9 +9,9 @@ namespace CrashCourse.PetShop.Core.IServices
     {
         Pet New(string name, PetType type, DateTime birthDate, DateTime soldDate, string color, double price);
         Pet Update(Pet updatePet);
-        List<Pet> GetByColor(Filter filter, string color);
-        List<Pet> SortByAscendingPrice(Filter filter);
-        List<Pet> GetAll(Filter filter);
+        List<Pet> GetByColor(string color);
+        List<Pet> SortByAscendingPrice();
+        List<Pet> GetAll();
         List<Pet> GetFiveCheapest();
         Pet Delete(int id);
         Pet Save(Pet savePet);

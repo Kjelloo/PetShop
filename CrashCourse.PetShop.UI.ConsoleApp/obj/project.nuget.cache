@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "TqL+7e2zxCicqYPNoKearEpJoACYidWHhcMeB9ur7DhshB3JkTUuuXsI4GDLDOVGc+VZBFtg2FkmeuH3vBCUYQ==",
+  "dgSpecHash": "kzkxsXywN3kprDodF/cEhXwkOO2crwJB2PiiEeaXqClADcLCMDD0WHhzyvmPM/EdR+7MjGyf0sI1wrAhKfWxmA==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
+  "projectFilePath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.UI.ConsoleApp\\CrashCourse.PetShop.UI.ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0-preview.7.21377.19\\microsoft.extensions.dependencyinjection.6.0.0-preview.7.21377.19.nupkg.sha512",
     "C:\\Users\\kjell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-preview.7.21377.19\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
-    "C:\\Users\\kjell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.7.21377.19\\system.runtime.compilerservices.unsafe.6.0.0-preview.7.21377.19.nupkg.sha512"
+    "C:\\Users\\kjell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.7.21377.19\\system.runtime.compilerservices.unsafe.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RBRguzf1uZ9sYyh6r0mdGtQBCeIYWVw9Jo1Z8TtvFdZ0bYl7k8qd2jv1Th8E1mDvCna9UQbHO/amEUtes0S7Fg==",
+  "dgSpecHash": "i+32kOGiNo9JYf+MU9hg9hjPGpOQUk9RBMu5hbfOw0/gEOpI7LbSSJ0fbCTpgwgoxCENW9XnQvtT4ukoj2ieDQ==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C# crash course\\CrashCourse.PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\kjell\\Documents\\Programming\\School\\DLS\\Compulsories\\Compulsory 3\\PetShop\\CrashCourse.PetShop.Domain\\CrashCourse.PetShop.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kjell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
