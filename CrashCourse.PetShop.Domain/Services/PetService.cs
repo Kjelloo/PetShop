@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CrashCourse.PetShop.Core.Filtering;
 using CrashCourse.PetShop.Core.IRepositories;
 using CrashCourse.PetShop.Core.IServices;
 using CrashCourse.PetShop.Core.Models;
